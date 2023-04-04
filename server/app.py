@@ -14,7 +14,7 @@ app.json.compact = False
 migrate = Migrate(app, db)
 
 db.init_app(app)
-
+                    #this is not  fully functional app. User interface/rendered web page doesnt suppossed to work. It is just for this exercise/lab
 @app.route('/clear') #setting a new session. giving client another 3 attempts
 def clear_session():
     session['page_views'] = 0
